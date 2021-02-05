@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">E-Worker</string>
     <string name="app_description">Labour Management App</string>
+    <string name="Welcome">Hello there, Welcome Back</string>
+    <string name="SignIn">Sign In to continue</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Forget">Forget Password?</string>
+    <string name="Go">Go</string>
+    <string name="NewUser">New User? SIGN UP</string>
 </resources>
