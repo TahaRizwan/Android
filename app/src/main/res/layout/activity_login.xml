@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +19,7 @@
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:src="@drawable/day"
-        android:transitionName="logo_name"
+        android:transitionName="logo_image"
         app:srcCompat="@drawable/day"
         tools:ignore="ContentDescription" />
 
@@ -23,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bangers"
-        android:text="@string/Welcome"
+        android:text="@string/WelcomeBack"
         android:textColor="#000"
         android:textSize="30sp"
         android:transitionName="logo_text" />
@@ -33,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/SignIn"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:transitionName="logo_desc"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,6 +59,7 @@
             <com.google.android.material.textfield.TextInputEditText
 
                 android:layout_width="match_parent"
+                android:transitionName="username_tran"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,6 +75,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:transitionName="password_tran"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -89,7 +97,9 @@
             android:layout_marginBottom="5dp"
             android:background="#000"
             android:text="@string/Go"
-            android:textColor="#FFFFFF" />
+            android:id="@+id/login_btn"
+            android:textColor="#FFFFFF"
+            android:transitionName="button_tran"/>
 
         <Button
             android:layout_width="match_parent"
@@ -98,9 +108,12 @@
             android:layout_margin="5dp"
             android:background="#00000000"
             android:elevation="0dp"
+            android:id="@+id/signup_screen"
             android:text="@string/NewUser"
+            android:transitionName="logo_signup_tran"
             android:textColor="#000" />
     </LinearLayout>
 
 
 </LinearLayout>
+</ScrollView>
