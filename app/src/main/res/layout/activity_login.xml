@@ -97,6 +97,7 @@
             android:layout_marginBottom="5dp"
             android:background="#000"
             android:text="@string/Go"
+            android:onClick="loginUser"
             android:id="@+id/login_btn"
             android:textColor="#FFFFFF"
             android:transitionName="button_tran"/>

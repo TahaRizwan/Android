@@ -15,4 +15,7 @@
     <string name="AlreadyHaveAccount">Already have an account? Login</string>
     <string name="StartYourJourney">SignUp to start your Journey</string>
     <string name="todo">TODO</string>
+    <string name="EnterOTP">Enter OTP</string>
+    <string name="Verify">Verify</string>
+    <string name="Update">Update</string>
 </resources>
